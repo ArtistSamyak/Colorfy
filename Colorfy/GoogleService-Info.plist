@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>655878400164-hm6o0gnr1sv7rqjnvs35ufir5mbrli48.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.655878400164-hm6o0gnr1sv7rqjnvs35ufir5mbrli48</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC3SoMC5UW664lvf9kt3FBbcQWab-acnVI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>655878400164</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ArtistSamyak.Colorfy</string>
+	<key>PROJECT_ID</key>
+	<string>colorfy-38a8c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>colorfy-38a8c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:655878400164:ios:05b51a23553bcfa3dc9e31</string>
+	<key>DATABASE_URL</key>
+	<string>https://colorfy-38a8c-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

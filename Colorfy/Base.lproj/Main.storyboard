@@ -1,24 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Colorfy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Umg-89-c3B">
+                                <rect key="frame" x="154.5" y="433" width="105" height="30"/>
+                                <state key="normal" title="Choose Picture"/>
+                                <connections>
+                                    <action selector="choosePic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hrA-fn-5wP"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bw1-zA-LvA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbh-oO-mRq">
+                                <rect key="frame" x="20" y="822" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.42695221300000002" green="0.23480254410000001" blue="0.60003304479999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2Sr-dZ-4Ag"/>
+                                </constraints>
+                                <state key="normal" title="CLEAR">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="0.90106938849999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uhz-dh-JtX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHH-pH-BL2">
+                                <rect key="frame" x="20" y="774" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.42695221300000002" green="0.23480254410000001" blue="0.60003304479999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="loh-Tp-2MJ"/>
+                                </constraints>
+                                <state key="normal" title="DOWNLOAD">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="0.90106938849999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="downloadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kaS-iu-Yzc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yHH-pH-BL2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2We-LD-Kh8"/>
+                            <constraint firstItem="Vbh-oO-mRq" firstAttribute="top" secondItem="yHH-pH-BL2" secondAttribute="bottom" constant="8" symbolic="YES" id="6nO-Pq-MGB"/>
+                            <constraint firstItem="Umg-89-c3B" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AiH-cP-kZP"/>
+                            <constraint firstAttribute="trailing" secondItem="bw1-zA-LvA" secondAttribute="trailing" id="H7D-8d-3SI"/>
+                            <constraint firstItem="bw1-zA-LvA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LGl-1w-Qfb"/>
+                            <constraint firstItem="Vbh-oO-mRq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MPu-bw-39g"/>
+                            <constraint firstItem="bw1-zA-LvA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RDT-we-LPz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vbh-oO-mRq" secondAttribute="trailing" constant="20" id="Uhc-Q6-9n7"/>
+                            <constraint firstItem="Vbh-oO-mRq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nGc-ys-mZF"/>
+                            <constraint firstItem="Umg-89-c3B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sOI-Ag-YZA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yHH-pH-BL2" secondAttribute="trailing" constant="20" id="vbZ-AP-USp"/>
+                            <constraint firstAttribute="bottom" secondItem="bw1-zA-LvA" secondAttribute="bottom" id="zQV-Ts-eHZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="choosePic" destination="Umg-89-c3B" id="wgB-ir-NFl"/>
+                        <outlet property="clearBtn" destination="Vbh-oO-mRq" id="DTC-bh-Q7z"/>
+                        <outlet property="downloadbtn" destination="yHH-pH-BL2" id="0cE-HA-hw0"/>
+                        <outlet property="imageView" destination="bw1-zA-LvA" id="kpl-nx-inb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="88.392857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

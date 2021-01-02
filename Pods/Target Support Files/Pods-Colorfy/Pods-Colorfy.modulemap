@@ -1,0 +1,6 @@
+framework module Pods_Colorfy {
+  umbrella header "Pods-Colorfy-umbrella.h"
+
+  export *
+  module * { export * }
+}

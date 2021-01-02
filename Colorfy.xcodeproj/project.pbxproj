@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54B7511CECE043ADFDCB209B /* Pods_Colorfy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C0E9DFB563099F33E74578 /* Pods_Colorfy.framework */; };
 		E333DAC125A0A73400A4F901 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333DAC025A0A73400A4F901 /* AppDelegate.swift */; };
 		E333DAC325A0A73400A4F901 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333DAC225A0A73400A4F901 /* SceneDelegate.swift */; };
 		E333DAC525A0A73400A4F901 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333DAC425A0A73400A4F901 /* ViewController.swift */; };
 		E333DAC825A0A73400A4F901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E333DAC625A0A73400A4F901 /* Main.storyboard */; };
 		E333DACA25A0A73700A4F901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E333DAC925A0A73700A4F901 /* Assets.xcassets */; };
 		E333DACD25A0A73700A4F901 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E333DACB25A0A73700A4F901 /* LaunchScreen.storyboard */; };
+		E333DAD825A0AAD300A4F901 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E333DAD725A0AAD300A4F901 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5749F46272F05CFD93672B66 /* Pods-Colorfy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorfy.release.xcconfig"; path = "Target Support Files/Pods-Colorfy/Pods-Colorfy.release.xcconfig"; sourceTree = "<group>"; };
+		625690184B258328F326BAC7 /* Pods-Colorfy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorfy.debug.xcconfig"; path = "Target Support Files/Pods-Colorfy/Pods-Colorfy.debug.xcconfig"; sourceTree = "<group>"; };
+		D8C0E9DFB563099F33E74578 /* Pods_Colorfy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Colorfy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E333DABD25A0A73400A4F901 /* Colorfy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colorfy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E333DAC025A0A73400A4F901 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E333DAC225A0A73400A4F901 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		E333DAC925A0A73700A4F901 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E333DACC25A0A73700A4F901 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E333DACE25A0A73700A4F901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E333DAD725A0AAD300A4F901 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B7511CECE043ADFDCB209B /* Pods_Colorfy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		004674037790EF5C3E9A1773 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				625690184B258328F326BAC7 /* Pods-Colorfy.debug.xcconfig */,
+				5749F46272F05CFD93672B66 /* Pods-Colorfy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C70454705A2385C9D0FC51E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8C0E9DFB563099F33E74578 /* Pods_Colorfy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E333DAB425A0A73400A4F901 = {
 			isa = PBXGroup;
 			children = (
 				E333DABF25A0A73400A4F901 /* Colorfy */,
 				E333DABE25A0A73400A4F901 /* Products */,
+				004674037790EF5C3E9A1773 /* Pods */,
+				C70454705A2385C9D0FC51E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +89,7 @@
 				E333DAC625A0A73400A4F901 /* Main.storyboard */,
 				E333DAC925A0A73700A4F901 /* Assets.xcassets */,
 				E333DACB25A0A73700A4F901 /* LaunchScreen.storyboard */,
+				E333DAD725A0AAD300A4F901 /* GoogleService-Info.plist */,
 				E333DACE25A0A73700A4F901 /* Info.plist */,
 			);
 			path = Colorfy;
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E333DAD125A0A73700A4F901 /* Build configuration list for PBXNativeTarget "Colorfy" */;
 			buildPhases = (
+				B487504D221FEE4B91BCA673 /* [CP] Check Pods Manifest.lock */,
 				E333DAB925A0A73400A4F901 /* Sources */,
 				E333DABA25A0A73400A4F901 /* Frameworks */,
 				E333DABB25A0A73400A4F901 /* Resources */,
+				EC300E817AC982A88B5F78E9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				E333DACD25A0A73700A4F901 /* LaunchScreen.storyboard in Resources */,
+				E333DAD825A0AAD300A4F901 /* GoogleService-Info.plist in Resources */,
 				E333DACA25A0A73700A4F901 /* Assets.xcassets in Resources */,
 				E333DAC825A0A73400A4F901 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B487504D221FEE4B91BCA673 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Colorfy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC300E817AC982A88B5F78E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Colorfy/Pods-Colorfy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Colorfy/Pods-Colorfy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Colorfy/Pods-Colorfy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E333DAB925A0A73400A4F901 /* Sources */ = {
@@ -283,6 +356,7 @@
 		};
 		E333DAD225A0A73700A4F901 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 625690184B258328F326BAC7 /* Pods-Colorfy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,12 +370,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ArtistSamyak.Colorfy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E333DAD325A0A73700A4F901 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5749F46272F05CFD93672B66 /* Pods-Colorfy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,7 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ArtistSamyak.Colorfy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
